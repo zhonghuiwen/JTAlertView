@@ -209,6 +209,8 @@ const static CGFloat kTitleFontSize = 21.0;
     _titleLabel.textColor = _titleColor;
     _titleLabel.text = _alertTitle;
     _titleLabel.textAlignment = NSTextAlignmentCenter;
+    _titleLabel.minimumScaleFactor = 0.3;
+    _titleLabel.adjustsFontSizeToFitWidth = YES;
     if (_titleShadow) {
         _titleLabel.layer.shadowOpacity = 1.0;
         _titleLabel.layer.shadowColor = [[UIColor blackColor] colorWithAlphaComponent:0.5].CGColor;
